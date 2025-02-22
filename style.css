@@ -1,0 +1,73 @@
+body {
+    background-image: url(soccergame.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#teamHome {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: orangered;
+}
+
+#teamAway {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: rgb(171, 242, 28);
+}
+
+#changeteamnamebutton {
+    color: aqua;
+    background-color:#120101;
+    margin-bottom: 2rem;
+}
+
+#scoretext {
+    color: orangered;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#scoreforTeamhome {
+    color: rgb(30, 255, 10);
+    font-size: 3rem;
+    font-weight: bolder;
+    
+}
+
+#scoreforTeamaway {
+    color: rgb(30, 255, 10);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+
+#increasegoalbutton {
+    margin-right: 2rem;
+    margin-top: 3rem;
+    color: aqua;
+    background-color:#120101;
+    padding: 1.5rem;
+    border-radius: 100%;
+}
+
+#decreasegoalbutton {
+    margin-right: 2rem;
+    color: aqua;
+    background-color:#120101;
+    padding: 1.5rem;
+    border-radius: 100%;
+}
+
+#entergoalbutton {
+    color: aqua;
+    background-color:#120101;
+    padding: 1.5rem;
+    border-radius: 15%;
+}
+
+.row-divider {
+    border-right: 10px solid rgb(7, 6, 6);
+}
