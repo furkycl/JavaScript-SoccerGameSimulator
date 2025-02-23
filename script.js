@@ -27,12 +27,19 @@ function decreasegoalHometeam() {
     let goalcounter = document.getElementById("scoreforTeamhome").innerHTML;
     goalcounter = +goalcounter;
     goalcounter = goalcounter - 1;
-    document.getElementById("scoreforTeamhome").innerHTML = goalcounter;
+    if(goalcounter>-1) {
+        document.getElementById("scoreforTeamhome").innerHTML = goalcounter;
+    }
 }
 
 function enterforgoalNumberhometeam() {
     let goalcounter = document.getElementById("scoreforTeamhome").innerHTML;
     goalcounter = prompt("Gol sayısı giriniz");
+    goalcounter=Number(goalcounter);
+    if(isNaN(goalcounter)){
+        alert("Sayı değeri giriniz. Örn:1,2,3,4,5!");
+        goalcounter=0;
+    }
     document.getElementById("scoreforTeamhome").innerHTML = goalcounter;
 }
 
@@ -47,11 +54,21 @@ function decreasegoalAwayteam() {
     let goalcounter = document.getElementById("scoreforTeamaway").innerHTML;
     goalcounter = +goalcounter ;
     goalcounter = goalcounter - 1;
-    document.getElementById("scoreforTeamaway").innerHTML = goalcounter;
+    if(goalcounter>-1) {
+        document.getElementById("scoreforTeamaway").innerHTML = goalcounter;
+    }
 }
 
 function enterforgoalNumberawayteam() {
     let goalcounter = document.getElementById("scoreforTeamaway").innerHTML;
     goalcounter = prompt("Gol sayısı giriniz");
+    if(isNaN(goalcounter)){
+        alert("Sayı değeri giriniz. Örn:1,2,3,4,5!");
+        goalcounter=0;
+    }
     document.getElementById("scoreforTeamaway").innerHTML = goalcounter;
 }
+
+function isNumber(value) {
+    return !isNaN(Number(value));
+  }
